@@ -115,6 +115,7 @@ def get_data():
     selected_data = df.iloc[:, :7]
     data_matrix = selected_data.values
     data_matrix = data_matrix[~pd.isna(data_matrix).any(axis=1)]
+    print(data_matrix)
     return data_matrix
 
 def log_interactions():
